@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Controle Financeiro</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Menu lateral -->
+    <aside class="sidebar">
+        <div class="logo">
+            <span class="logo-icone">$</span>
+            <span>Finanças<br><small>Controle pessoal</small></span>
+        </div>
+
+        <nav>
+            <a href="#dashboard" data-pagina="dashboard"><span data-icone="dashboard"></span><em>Dashboard</em></a>
+            <a href="#transacoes" data-pagina="transacoes"><span data-icone="transacoes"></span><em>Transações</em></a>
+            <a href="#categorias" data-pagina="categorias"><span data-icone="categorias"></span><em>Categorias</em></a>
+            <a href="#metas" data-pagina="metas"><span data-icone="metas"></span><em>Metas</em></a>
+            <a href="#relatorios" data-pagina="relatorios"><span data-icone="relatorios"></span><em>Relatórios</em></a>
+        </nav>
+
+        <p class="sidebar-rodape">Dados salvos no seu PostgreSQL</p>
+    </aside>
+
+    <!-- Conteúdo da página atual (preenchido pelo JavaScript) -->
+    <main class="conteudo">
+        <div id="pagina"></div>
+    </main>
+</div>
+
+<!-- Janela usada para os formulários -->
+<dialog id="modal"></dialog>
+
+<!-- Avisos que aparecem no canto da tela -->
+<div id="avisos"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
